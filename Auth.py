@@ -1,4 +1,15 @@
-def autenticar(usuario, senha):
-    query = f"SELECT * FROM usuarios WHERE nome = '{usuario}' AND senha = '{senha}'"
-    print("Executando query:", query)  # Simulação de execução (NÃO FAÇA ISSO)
-    return "Usuário autenticado" if usuario == "admin" and senha == "1234" else "Falha na autenticação"
+class Usuario:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+    
+    def exibir_dados(self):
+        print("Nome: " + self.nome)
+        print("Idade: " + str(self.idade))
+
+    def duplicado(self):
+        print("Nome: " + self.nome)
+        print("Idade: " + str(self.idade))
+
+
+
